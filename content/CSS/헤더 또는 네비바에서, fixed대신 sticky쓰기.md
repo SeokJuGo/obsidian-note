@@ -1,3 +1,8 @@
+---
+tags:
+  - CSS
+---
+
 부모는 flex상태,
 
 자식 Component
@@ -9,6 +14,4 @@ self: flex-start
 
 
 https://codepen.io/SeokJuGo/pen/LYaLrvJ
-
-
 

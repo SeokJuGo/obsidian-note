@@ -1,3 +1,8 @@
+---
+tags:
+  - Java
+---
+
 # JDBC (Java Database Connectivity)
 
 - JDBC는 Java 프로그램이 다양한 데이터베이스와 통신하고 상호 작용하기 위한 표준 인터페이스를 제공하는 API

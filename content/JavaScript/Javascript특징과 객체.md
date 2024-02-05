@@ -1,3 +1,8 @@
+---
+tags:
+  - JavaScript
+---
+
 # JavaScript
 
 ## 1. 특징

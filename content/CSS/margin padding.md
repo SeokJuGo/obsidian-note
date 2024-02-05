@@ -1,4 +1,8 @@
-<img src="../assets/images/CSS/general.png">
+---
+tags:
+  - CSS
+---
+
 
 ![[Pasted image 20240126104311.png]]
 

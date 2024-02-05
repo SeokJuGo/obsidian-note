@@ -1,3 +1,7 @@
+---
+tags:
+  - JavaScript
+---
 
 # DOM  JavaScript함수
 

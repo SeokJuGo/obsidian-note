@@ -1,5 +1,8 @@
+---
+tags:
+  - Spring
+---
 
-[[Spring]]
 ### 1.XML 기반 설정
 
 XML 파일을 사용하여 `ApplicationContext`를 설정할 수 있다. 기본적으로 `applicationContext.xml` 파일에 빈(bean) 설정과 의존성 주입을 정의

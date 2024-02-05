@@ -1,4 +1,8 @@
-[[Vue]]
+---
+tags:
+  - Vue
+---
+
 # Props
 
 ```vue

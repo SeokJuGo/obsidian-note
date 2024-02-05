@@ -1,4 +1,8 @@
-[[Spring]]
+---
+tags:
+  - Spring
+---
+
 ## 1. DI(Dependency Injection)
 
 DI(의존성 주입) 이란? 

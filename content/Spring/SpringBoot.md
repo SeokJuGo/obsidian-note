@@ -1,4 +1,9 @@
-# [[Spring]] Boot
+---
+tags:
+  - Spring
+---
+
+# Spring Boot
 
 - 기존 Spring의 경우 Applicatino 개발 시에, 많은 사전작업이 필요한 것을 간소화
 

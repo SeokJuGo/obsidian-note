@@ -1,4 +1,8 @@
-[[Vue]]
+---
+tags:
+  - Vue
+---
+
 # 1. Axios
 
 javascript 어플리케이션에서 서버 통신을 하기 위한 HTTP 통신 라이브러리

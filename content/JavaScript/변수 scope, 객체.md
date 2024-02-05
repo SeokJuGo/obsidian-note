@@ -1,3 +1,8 @@
+---
+tags:
+  - JavaScript
+---
+
 ## 1. var, let, const
 
 | 키워드  |     스코프     | 재할당 가능 여부 |
