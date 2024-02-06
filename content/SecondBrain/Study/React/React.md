@@ -2,7 +2,6 @@
 tags:
   - React
 date: 2024-02-03T15:00:00
-weight: 5
 title: React 기본
 ---
 
