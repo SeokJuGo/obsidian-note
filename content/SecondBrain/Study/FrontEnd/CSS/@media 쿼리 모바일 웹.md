@@ -12,9 +12,22 @@ tags:
 `@media` 쿼리를 사용하여 화면 너비가 768px 이하일 때, 너비를 100%로 설정하여 모바일 환경에 적합하게 만들어 줄 수있다.
 
 # 코드
+
+styledComponent
 ```css
 const Container = styled.div`  
   width: 40%;  height: 100%;  background-color: white;   
   /* 모바일 환경에서는 너비를 100%로 */  
   @media (max-width: 768px) {    width: 100%;  }`;
+```
+
+css
+```css
+@media all and (max-width: 768px){
+	.postbutton{
+		height: 52px;
+		width: 234px;
+	}
+}
+
 ```
