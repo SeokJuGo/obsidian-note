@@ -13,16 +13,16 @@ Next.js에서 CSR방식에서  SSR방식을 import하여 같이 사용하게 SSR
 같이 사용하려면 Props로 children을 넘겨주어서 같이 사용해야한다.
 
 # 코드
-```jsx
 Post.jsx
+```jsx
+
 return(
 	<PostArticle post={target}>
 )
 ```
 
-```jsx
 PostArticle.jsx
-
+```jsx
 type Props{
 	children: ReactNode,
 	post:{
