@@ -2,6 +2,7 @@
 title: VanillaExtract
 tags:
   - VanillaExtract
+  - CSS
 date: 2024-03-08
 중요도: 중
 ---
@@ -10,6 +11,14 @@ date: 2024-03-08
 # 메모
 
 Vanilla Extract는 CSS-in-JS 도구
+npm
+- npm install @vanilla-extract/css
+- npm install --save-dev @vanilla-extract/next-plugin
+next.config.js
+```
+const { createVanillaExtractPlugin } = require('@vanilla-extract/next-plugin'); const withVanillaExtract = createVanillaExtractPlugin(); /** @type {import('next').NextConfig} */ const nextConfig = {}; module.exports = withVanillaExtract(nextConfig);
+```
+
 
 - CSS에서 JS문법을 사용할 수 있어서 생산성 🔼
 - 컴포넌트 파일에 관련된 코드들을 함께 둘 수 있음
