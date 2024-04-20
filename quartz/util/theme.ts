@@ -31,33 +31,42 @@ export function googleFontHref(theme: Theme) {
 }
 
 export function joinStyles(theme: Theme, ...stylesheet: string[]) {
+  const fontFace = `
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+`;
+
   return `
 ${stylesheet.join("\n\n")}
-
+${fontFace}
 :root {
-  --light: ${theme.colors.lightMode.light};
-  --lightgray: ${theme.colors.lightMode.lightgray};
-  --gray: ${theme.colors.lightMode.gray};
-  --darkgray: ${theme.colors.lightMode.darkgray};
-  --dark: ${theme.colors.lightMode.dark};
-  --secondary: ${theme.colors.lightMode.secondary};
-  --tertiary: ${theme.colors.lightMode.tertiary};
-  --highlight: ${theme.colors.lightMode.highlight};
+  --light: #f5f5f5; /* 밝은 회색 */
+  --lightgray: #eeeeee; /* 밝은 회색 */
+  --gray: #bdbdbd; /* 회색 */
+  --darkgray: #757575; /* 어두운 회색 */
+  --dark: #424242; /* 매우 어두운 회색 */
+  --secondary: #333333; /* 검정색 */
+  --tertiary: #9999ff; /* 파란색 */
+  --highlight: #ccccff; /* 분홍색 */
 
-  --headerFont: "${theme.typography.header}", ${DEFAULT_SANS_SERIF};
-  --bodyFont: "${theme.typography.body}", ${DEFAULT_SANS_SERIF};
-  --codeFont: "${theme.typography.code}", ${DEFAULT_MONO};
+  --headerFont: 'Pretendard-Regular', ${DEFAULT_SANS_SERIF};
+  --bodyFont: 'Pretendard-Regular', ${DEFAULT_SANS_SERIF};
+  --codeFont: 'Pretendard-Regular', ${DEFAULT_MONO};
 }
 
 :root[saved-theme="dark"] {
-  --light: ${theme.colors.darkMode.light};
-  --lightgray: ${theme.colors.darkMode.lightgray};
-  --gray: ${theme.colors.darkMode.gray};
-  --darkgray: ${theme.colors.darkMode.darkgray};
-  --dark: ${theme.colors.darkMode.dark};
-  --secondary: ${theme.colors.darkMode.secondary};
-  --tertiary: ${theme.colors.darkMode.tertiary};
-  --highlight: ${theme.colors.darkMode.highlight};
+  --light: #000000; /* 어두운 회색 */
+  --lightgray: #455a64; /* 어두운 회색 */
+  --gray: #999999; /* 회색 */
+  --darkgray: #eceff1; /* 밝은 회색 */
+  --dark: #fafafa; /* 밝은 회색 */
+  --secondary: #999999; /* 연한 파란색 */
+  --tertiary: #9999ff; /* 연한 주황색 */
+  --highlight: #ccccff; /* 연한 주황색 */
 }
 `
 }
