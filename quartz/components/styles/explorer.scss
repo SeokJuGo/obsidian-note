@@ -42,24 +42,19 @@ button#explorer {
 
 #explorer-content {
   list-style: none;
-  overflow: hidden;
-  max-height: none;
+  overflow: auto;
+  max-height: 400px;
   transition: max-height 0.35s ease;
   margin-top: 0.5rem;
-  ::-webkit-scrollbar {
-    width: 3px; /*스크롤바의 너비*/
-  }
 
-  ::-webkit-scrollbar-thumb {
-    height: 5%; /* 스크롤바의 길이 */
-    background: #D3D3D3;
-  }
 
   &.collapsed > .overflow::after {
+    overflow:hidden;
     opacity: 0;
   }
 
   & ul {
+
     list-style: none;
     margin: 0.08rem 0;
     padding: 0;
