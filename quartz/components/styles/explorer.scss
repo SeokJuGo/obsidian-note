@@ -43,14 +43,16 @@ button#explorer {
 #explorer-content {
   list-style: none;
   overflow: auto;
-  max-height: 400px;
+  max-height: 630px;
   transition: max-height 0.35s ease;
   margin-top: 0.5rem;
+
 
 
   &.collapsed > .overflow::after {
     overflow:hidden;
     opacity: 0;
+
   }
 
   & ul {
@@ -142,6 +144,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 }
 
 #explorer-end {
+
   // needs height so IntersectionObserver gets triggered
   height: 4px;
   // remove default margin from li
