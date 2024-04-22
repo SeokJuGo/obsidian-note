@@ -33,10 +33,10 @@ export function googleFontHref(theme: Theme) {
 export function joinStyles(theme: Theme, ...stylesheet: string[]) {
   const fontFace = `
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+font-family: 'BMHANNAPro';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 `;
 
@@ -53,9 +53,9 @@ ${fontFace}
   --tertiary: #9999ff; /* 파란색 */
   --highlight: #ccccff; /* 분홍색 */
 
-  --headerFont: 'Pretendard-Regular', ${DEFAULT_SANS_SERIF};
-  --bodyFont: 'Pretendard-Regular', ${DEFAULT_SANS_SERIF};
-  --codeFont: 'Pretendard-Regular', ${DEFAULT_MONO};
+  --headerFont: 'BMHANNAPro', ${DEFAULT_SANS_SERIF};
+  --bodyFont: 'BMHANNAPro', ${DEFAULT_SANS_SERIF};
+  --codeFont: 'BMHANNAPro', ${DEFAULT_MONO};
 }
 
 :root[saved-theme="dark"] {

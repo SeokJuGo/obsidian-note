@@ -6,6 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   footer: Component.Footer({
+
     links: {
       GitHub: "https://github.com/SeokJuGo",
       "Portfolio": "https://seokjugo.site",
